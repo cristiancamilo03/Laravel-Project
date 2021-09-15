@@ -11,4 +11,7 @@ class InvoiceController extends Controller
         $invoices = Invoice::all();
         return view('invoice.list',['invoices'=>$invoices]); 
     }
+    function form(){
+        return view('invoice.form');
+    }
 }
