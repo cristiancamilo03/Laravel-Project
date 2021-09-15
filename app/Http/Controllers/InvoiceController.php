@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Invoice;
+use App\Models\Product;
 
 class InvoiceController extends Controller
 {
@@ -12,6 +13,7 @@ class InvoiceController extends Controller
         return view('invoice.list',['invoices'=>$invoices]); 
     }
     function form(){
-        return view('invoice.form');
+        $products = Product::all();
+        return view('invoice.form',['products'=>$products]);
     }
 }
