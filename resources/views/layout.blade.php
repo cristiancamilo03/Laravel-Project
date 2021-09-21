@@ -94,6 +94,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/invoices">
+              <span data-feather="shopping-cart"></span>
+              Invoices
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/brands">
               <span data-feather="shopping-cart"></span>
               Marcas
